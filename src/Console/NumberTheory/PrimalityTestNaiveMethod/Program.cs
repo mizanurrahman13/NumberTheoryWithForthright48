@@ -24,6 +24,7 @@ namespace PrimalityTestNaiveMethod
             if (n <= 1) return false;
             for (int i = 2; i < n; i++)
             {
+                // If it is possible to divide n with a number other than 1 and n, then it is not prime
                 if (n % i == 0)
                 {
                     return false;
